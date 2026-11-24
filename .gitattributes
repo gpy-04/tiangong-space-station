@@ -10,4 +10,5 @@
 *.json text eol=lf
 *.txt text eol=lf
 index.html -text -whitespace
+exhibition/assets/launch.html -text -whitespace
 references/** -text -whitespace

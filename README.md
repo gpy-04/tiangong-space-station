@@ -1,5 +1,7 @@
 # 天宫 · 中国空间站交互图鉴
 
+新增整合版：[`exhibition/index.html`](exhibition/index.html)，依次包含历史博物馆、天宫空间站、火箭与发射。历史馆默认突出杭州与浙江，20 个事件均配真实照片或任务实拍，讲解默认折叠。操作与重新构建说明见 [`exhibition/README.md`](exhibition/README.md)。
+
 双击 `index.html` 即可使用，资源已内嵌，运行时无需网络。
 
 - 三舱、外壳、实验设施、生活区、可跳过的电影式开场。

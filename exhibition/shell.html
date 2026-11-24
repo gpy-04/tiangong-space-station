@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>中国航天 · 从历史走向星河</title>
+<meta name="description" content="中国航天三维探索馆：历史成就博物馆、天宫空间站精细交互模型、长征十号与昊龙发射科普。一页离线探索。">
+<meta name="theme-color" content="#0b141c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b141c'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%23899da9'/%3E%3Cellipse cx='32' cy='32' rx='30' ry='10' transform='rotate(-38 32 32)' fill='none' stroke='%23e7ac70'/%3E%3Cpath d='M25 23h14v18H25zM25 30h14M32 23v18' fill='none' stroke='%23e8eef1' stroke-width='2'/%3E%3C/svg%3E">
+<style>/* FONTS */
+/* STYLES */</style>
+</head>
+<body>
+<header class="global-header">
+ <a class="brand" href="#museum" aria-label="中国航天探索馆首页"><span class="brand-symbol">中</span><span>中国航天<small>CHINA SPACE · EXPLORER</small></span></a>
+ <nav class="chapters" aria-label="展馆章节"><button data-chapter="museum" class="selected" aria-current="page"><span>01</span>历史博物馆</button><button data-chapter="station"><span>02</span>天宫空间站</button><button data-chapter="rocket"><span>03</span>火箭与发射</button></nav>
+ <div class="header-actions"><button id="references">资料与依据 ↗</button><button id="fullscreen" aria-label="全屏展示">⛶</button></div>
+</header>
+<main id="exhibition">
+ <section id="museum" class="chapter museum" aria-label="第一章 中国航天历史博物馆">
+  <aside class="museum-nav"><span class="eyebrow">HANGZHOU / TO THE STARS</span><h1>从杭州，<br>望向星河。</h1><p class="nav-description">中国航天发展史<br>杭州印记 · 历史成就</p><div class="chapter-range">1956 <i></i> 2025</div><div class="nav-divider"></div><span class="eyebrow">选择探索线索</span><nav id="eraFilters" aria-label="航天历史主题"></nav><div class="museum-nav-bottom"><span class="status-dot"></span> 真实影像 · 成就档案<small>01 / 03 · 中国航天探索馆</small><button data-go="station">下一章 · 走进天宫 <span>→</span></button></div></aside>
+  <div class="museum-center"><div id="museumStage" class="museum-stage photo-mode" aria-label="航天历史影像与三维代表展品"><div class="museum-meta"><span><i class="status-dot"></i> CHAPTER 01 / 历史成就</span><span id="exhibitCount">01 / 20</span></div><div class="exhibit-heading"><span class="eyebrow" id="exhibitEra"></span><h2 id="exhibitTitle"></h2><p id="exhibitDate"></p></div><div class="media-switch" role="group" aria-label="展品展示方式"><button data-media="photo" class="selected" aria-pressed="true">历史影像</button><button data-media="model" aria-pressed="false">三维展品</button></div><div id="museumCanvas" hidden></div><figure class="history-photo" id="historyPhotoFrame"><button id="photoExpand" aria-label="放大历史照片"><img id="historyPhoto" alt="" decoding="async"><span class="photo-expand-mark">⤢</span></button><figcaption><span id="photoCaption"></span><a id="photoCredit" target="_blank" rel="noopener noreferrer"></a></figcaption></figure><div class="exhibit-controls" hidden><button id="museumRotate" aria-pressed="true">Ⅱ 暂停展台</button><button id="museumReset">↺ 复位视角</button></div><div class="museum-gesture" hidden>拖动旋转 · 滚轮缩放</div><div class="artifact-caption" id="artifactCaption" hidden></div><div class="model-fallback" id="modelFallback" hidden>三维展品暂时无法显示。</div></div>
+  <footer class="history-timeline"><div class="timeline-top"><span>成就时间线 <small id="timelineFilter">全部成就</small></span><div><button id="historyPrev" aria-label="上一个历史成就">←</button><button id="historyPlay" aria-pressed="false">▷ 自动导览</button><button id="historyNext" aria-label="下一个历史成就">→</button></div></div><div class="timeline-track" id="historyTimeline" aria-label="历史成就时间线"></div></footer></div>
+  <aside class="museum-reading" aria-live="polite"><div class="reading-top"><span class="eyebrow">THE MILESTONE</span><span id="readingIndex">01 / 20</span></div><span class="achievement-badge" id="achievementBadge"></span><h2 id="historyTitle"></h2><p class="history-summary" id="historySummary"></p><p class="local-connection" id="localConnection"></p><div class="museum-facts" id="historyFacts"></div><details class="history-details" id="historyDetails"><summary>展开讲解 <span>＋</span></summary><section class="achievement-copy"><h3>历史成就</h3><p id="historyLongSummary"></p><p id="historyAchievement"></p></section><section class="principle-copy"><h3>怎样实现？</h3><p id="historyPrinciple"></p></section><p class="exhibit-boundary">三维展品为科普重建。图注说明影像的拍摄对象，具体任务以史料为准。</p></details><button class="related-entry" id="historyRelated">进入精细模型 <span>→</span></button><a class="evidence-link" id="historySource" target="_blank" rel="noopener noreferrer">查阅史料 ↗<small></small></a><div class="reading-next"><small>继续探索</small><button id="readingNext">下一项成就 <span>→</span></button></div></aside>
+ </section>
+  <section id="station" class="chapter embedded-chapter" aria-label="第二章 天宫空间站交互图鉴" hidden><div class="chapter-loading"><span class="loading-orbit"></span><p>正在进入天宫空间站</p><small>准备精细模型与地球背景</small></div><iframe id="stationFrame" title="天宫空间站精细模型、舱内漫游与实验设施" allow="fullscreen; autoplay"></iframe></section>
+ <section id="rocket" class="chapter embedded-chapter" aria-label="第三章 火箭模型与发射" hidden><div class="model-subnav"><span>载人登月与空间运输</span><div><button data-rocket="rocket" class="selected" aria-pressed="true">长征十号</button><button data-rocket="haolong" aria-pressed="false">昊龙货运航天飞机</button></div><button class="chapter-bridge" data-go="station">返回天宫 <span>↗</span></button></div><div class="chapter-loading"><span class="loading-orbit"></span><p>正在进入发射探索</p><small>准备发射场与三维展品</small></div><iframe id="rocketFrame" title="长征十号、昊龙、发动机与发射场科普" allow="fullscreen; autoplay"></iframe></section>
+</main>
+<dialog id="sourcesDialog"><button class="dialog-close" aria-label="关闭资料">×</button><span class="eyebrow">REFERENCES & RECONSTRUCTION</span><h2>从史料出发，走进中国航天。</h2><p>第一章选取 1956—2025 年的代表性成就，默认从杭州与浙江的航天贡献出发。可切换全国成就时间线；详细讲解按需展开。</p><div id="historySources"></div><div class="source-boundary"><h3>模型与构型说明</h3><p>第二章依据公开报道重建三舱与舱内设施，采用 2023 年离站影像所示历史构型。第三章介绍长征十号公开方案及昊龙构型；研制方案和教学动画不作为已完成的飞行成就。历史影像与三维展品可切换；影像说明拍摄对象，代表模型另有构型说明。</p><p>原模型的资料与精度说明保留在各展区的资料面板中。网页及嵌入展区均可离线运行；查阅外部官方史料需要联网。</p></div></dialog>
+<dialog id="photoDialog" class="photo-dialog"><button class="photo-dialog-close" aria-label="关闭大图">×</button><img id="largePhoto" alt=""><p id="largePhotoCaption"></p></dialog>
+<div class="chapter-announcer" id="chapterAnnouncer" role="status" aria-live="polite"></div>
+<script type="application/json" id="launchDocument">/* LAUNCH */</script>
+<script type="application/json" id="stationDocument">/* STATION */</script>
+<script type="application/json" id="bridgeSource">/* BRIDGE */</script>
+<script type="application/json" id="embedStyles">/* EMBED STYLES */</script>
+<script type="application/json" id="photoDocuments">/* PHOTOS */</script>
+<script>/* APP */</script>
+</body></html>

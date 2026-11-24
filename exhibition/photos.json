@@ -1,0 +1,222 @@
+{
+  "foundation": {
+    "file": "assets/photos/foundation.webp",
+    "caption": "国防部第五研究院办公楼旧址",
+    "credit": "中国航天报 / 国家航天局",
+    "kind": "历史建筑照片",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758968/n6758974/c6772286/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758968/n6758974/c6772286/part/6769746.jpg",
+    "originalSHA256": "9e88db91dba74a55bb7b01ced3ece29d3c0746b113c048fd68484b9067b67ca6",
+    "width": 600,
+    "height": 299
+  },
+  "dongfanghong": {
+    "file": "assets/photos/dongfanghong.webp",
+    "caption": "东方红一号研制时期档案影像",
+    "credit": "国家航天局 / 中国的航天",
+    "kind": "档案照片",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758968/n6758973/c10767778/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758968/n6758973/c10767778/part/10767794.jpg",
+    "originalSHA256": "ec74639a079163594319fda5b1e73aaa3a318a6fd917aa904ea672696d317880",
+    "width": 554,
+    "height": 376
+  },
+  "recover": {
+    "file": "assets/photos/recover.webp",
+    "caption": "早期返回式卫星实物展陈",
+    "credit": "中国新闻网",
+    "kind": "实物展陈照片",
+    "sourcePage": "https://www.chinanews.com/mil/2014/11-26/6816515.shtml",
+    "original": "https://www.chinanews.com/cr/2014/1126/3395199319.jpg",
+    "originalSHA256": "cd8cf262dba6d16f0c71ec9727f2fea6e34f78c3fb59379ff482e38bf232246b",
+    "width": 500,
+    "height": 337
+  },
+  "project": {
+    "file": "assets/photos/project.webp",
+    "caption": "载人航天工程配套建设：酒泉垂直总装测试厂房",
+    "credit": "中国建筑",
+    "kind": "后续工程实景",
+    "sourcePage": "https://www.cscec.com/ztzl_new/mhsjd81_new/bg/201812/2899707.html",
+    "original": "https://www.cscec.com/ztzl_new/mhsjd81_new/bg/201812/W020181213412839451912.jpg",
+    "originalSHA256": "c344743ef400e2f0548324d1904f1117f75a794e010d11e9b7ecbed6a5c6d8e3",
+    "width": 900,
+    "height": 905
+  },
+  "shenzhou1": {
+    "file": "assets/photos/shenzhou1.webp",
+    "caption": "神舟一号飞行任务历史影像",
+    "credit": "中国载人航天工程办公室",
+    "kind": "任务照片",
+    "sourcePage": "https://www.cmse.gov.cn/xwzx/202209/t20220921_50802.html",
+    "original": "https://www.cmse.gov.cn/xwzx/202209/W020220921502202561510.jpg",
+    "originalSHA256": "e9faf8ebe9663c0ba24ffcfe3e1cfe2265858ab97411728938775bed97240de9",
+    "width": 500,
+    "height": 345
+  },
+  "shenzhou5": {
+    "file": "assets/photos/shenzhou5.webp",
+    "caption": "神舟五号任务与首飞航天员杨利伟",
+    "credit": "中国载人航天工程办公室",
+    "kind": "任务照片",
+    "sourcePage": "https://www.cmse.gov.cn/xwzx/202209/t20220921_50802.html",
+    "original": "https://www.cmse.gov.cn/xwzx/202209/W020220921502160834757.jpg",
+    "originalSHA256": "76718cc07b7102ced5d9b09407088fce043a821da87231b2f3547a24f7ec09a3",
+    "width": 500,
+    "height": 336
+  },
+  "change1": {
+    "file": "assets/photos/change1.webp",
+    "caption": "嫦娥一号拍摄的月球影像",
+    "credit": "国家航天局 / 探月与航天工程中心",
+    "kind": "探测器实拍",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758823/n6758838/c6770108/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758823/n6758838/c6770108/part/6768685.jpg",
+    "originalSHA256": "9dba39915808f87297928c9f8b347379259a7bf9e809ad23edc18f7e6b72e4fc",
+    "width": 567,
+    "height": 425
+  },
+  "spacewalk": {
+    "file": "assets/photos/spacewalk.webp",
+    "caption": "神舟七号首次出舱活动影像",
+    "credit": "中国载人航天工程办公室",
+    "kind": "在轨影像",
+    "sourcePage": "https://www.cmse.gov.cn/xwzx/202209/t20220921_50802.html",
+    "original": "https://www.cmse.gov.cn/xwzx/202209/W020220921502113228156.jpg",
+    "originalSHA256": "90adf78db23063430bd99a48742de7921968d4a88abbfc95ceb6c8b16425c911",
+    "width": 500,
+    "height": 372
+  },
+  "pixing1": {
+    "file": "assets/photos/pixing1.webp",
+    "caption": "浙江大学皮星一号 A 研制实物",
+    "credit": "浙江大学 / 摄影：卢绍庆",
+    "kind": "研制实拍",
+    "sourcePage": "https://www.zju.edu.cn/2010/1002/c41533a63901/page.htm",
+    "original": "https://www.zju.edu.cn/_upload/article/images/99/6d/425c27e54a03ba9b12b3b520a09e/c68f7ae1-84cd-4f2f-bbc6-1e4d6753a488.jpg",
+    "originalSHA256": "6e7551be52a6b3f08eef84e385397b65cd1f4c7801945d32fc0d9fe13d6b51b3",
+    "width": 600,
+    "height": 400
+  },
+  "change3": {
+    "file": "assets/photos/change3.webp",
+    "caption": "嫦娥三号任务两器互拍影像",
+    "credit": "国家航天局 / 探月与航天工程中心",
+    "kind": "月面实拍",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758823/n6758838/c6770108/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758823/n6758838/c6770108/part/6768757.jpg",
+    "originalSHA256": "2d92b4385d545a8f2a2cccc61b709c9289e9fb4e9b11bc67e0a76718871ec872",
+    "width": 600,
+    "height": 441
+  },
+  "pixing2": {
+    "file": "assets/photos/pixing2.webp",
+    "caption": "搭载皮星二号的长征六号首飞现场",
+    "credit": "新华社 / 摄影：燕雁",
+    "kind": "发射实拍",
+    "sourcePage": "https://www.china.com.cn/newphoto/news/2015-09/20/content_36633273.htm",
+    "original": "https://images.china.cn/attachement/jpg/site1000/20150920/c89cdcae397617684f020a.jpg",
+    "originalSHA256": "6b525c24ec185da0cd02e5c8beaf8990acff27e3b8a523c5b69667af7e7ae9b5",
+    "width": 900,
+    "height": 638
+  },
+  "change4": {
+    "file": "assets/photos/change4.webp",
+    "caption": "玉兔二号走上月背后留下的第一道痕迹",
+    "credit": "国家航天局",
+    "kind": "月面实拍",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758823/n6758838/c6805052/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758823/n6758838/c6805052/part/6780030.jpg",
+    "originalSHA256": "9dafb6be1f21a332bca109ff6bcd6138cb8fa1e42277444d456c756d335b1dce",
+    "width": 1024,
+    "height": 1024
+  },
+  "beidou": {
+    "file": "assets/photos/beidou.webp",
+    "caption": "北斗三号全球系统建成暨开通仪式",
+    "credit": "新华社 / 摄影：鞠鹏",
+    "kind": "事件实拍",
+    "sourcePage": "https://www.cac.gov.cn/2020-08/01/c_1597834425248942.htm",
+    "original": "https://www.cac.gov.cn/rootimages/2020/08/01/1597834425248942-1597834425280738.jpg",
+    "originalSHA256": "c8d5939792498e2d8694cf2a2063ec99fefa98ef4546bd02ed879236e34e4c3d",
+    "width": 900,
+    "height": 628
+  },
+  "change5": {
+    "file": "assets/photos/change5.webp",
+    "caption": "嫦娥五号返回器着陆回收现场",
+    "credit": "国家航天局",
+    "kind": "回收实拍",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758823/n6758838/c6810872/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758823/n6758838/c6810872/part/6785687.jpg",
+    "originalSHA256": "7c9ba7f9ee91ad324a36ef5a0f544357c0bf162cb0e9eb75da555a9007f9cd12",
+    "width": 1920,
+    "height": 1080
+  },
+  "tianhe": {
+    "file": "assets/photos/tianhe.webp",
+    "caption": "天和核心舱发射任务历史影像",
+    "credit": "中国载人航天工程办公室",
+    "kind": "任务实拍",
+    "sourcePage": "https://www.cmse.gov.cn/xwzx/202209/t20220921_50802.html",
+    "original": "https://www.cmse.gov.cn/xwzx/202209/W020220921503350410548.jpg",
+    "originalSHA256": "8652e5631570080bb89e645bbc8430f07987b56897b406471f7421820195403f",
+    "width": 500,
+    "height": 333
+  },
+  "tianwen": {
+    "file": "assets/photos/tianwen.webp",
+    "caption": "祝融号着陆后拍摄的太阳翼与火星表面",
+    "credit": "国家航天局",
+    "kind": "火星实拍",
+    "sourcePage": "https://www.cnsa.gov.cn/n6758823/n6758838/c6812019/content.html",
+    "original": "https://www.cnsa.gov.cn/n6758823/n6758838/c6812019/part/6787089.jpg",
+    "originalSHA256": "b1806381a2008d1585510fa9510856b8117f043bf5b4d23de30ab970fa207679",
+    "width": 2400,
+    "height": 2400
+  },
+  "station": {
+    "file": "assets/photos/station.webp",
+    "caption": "2023 年神舟十六号乘组拍摄的三舱空间站",
+    "credit": "中国载人航天工程办公室",
+    "kind": "航天员在轨实拍",
+    "sourcePage": "https://www.cmse.gov.cn/dmt/tj/tkyxz/202311/t20231127_54720.html",
+    "original": "https://www.cmse.gov.cn/dmt/tj/tkyxz/202311/W020231127558484290199.jpg",
+    "originalSHA256": "78c6b5ac526a41ac04ad4097a588e59cd38cbee0cc7d4c829a9098b3a9351aaa",
+    "width": 500,
+    "height": 359
+  },
+  "zhuque": {
+    "file": "assets/photos/zhuque.webp",
+    "caption": "朱雀二号遥二火箭发射现场",
+    "credit": "酒泉卫星发射中心 / 摄影：张敬宜 / 新华网",
+    "kind": "发射实拍",
+    "sourcePage": "https://www.xinhuanet.com/video/20230712/14fa154ae00c4efc9fe9b036fcb87e81/c.html",
+    "original": "https://www.xinhuanet.com/video/20230712/14fa154ae00c4efc9fe9b036fcb87e81/2023071214fa154ae00c4efc9fe9b036fcb87e81_202307128e03c5930c6e4d3fbc00864dcb4ae842.jpg",
+    "originalSHA256": "bac771c39c1dab5dd190aa036bd3493b1d715ee2c6e723a7b634266f7f53b289",
+    "width": 1000,
+    "height": 1651
+  },
+  "change6": {
+    "file": "assets/photos/change6.webp",
+    "caption": "2024 年 6 月 25 日，嫦娥六号返回器回收现场",
+    "credit": "新华社 / 摄影：金立旺",
+    "kind": "回收实拍",
+    "sourcePage": "https://www.nmg.news.cn/20240625/9ebd3a79a9234115a400cf41048d6af0/c.html",
+    "original": "http://www.nmg.news.cn/20240625/9ebd3a79a9234115a400cf41048d6af0/202406259ebd3a79a9234115a400cf41048d6af0_ef24e9d250e2498ca224aa970bf94c47.JPG",
+    "originalSHA256": "f3d7b7805109bdb4c704a79d63000d533ff58cf9fa3288b1fceee87dd3e4b4ed",
+    "width": 1024,
+    "height": 683
+  },
+  "santai": {
+    "file": "assets/photos/santai.webp",
+    "caption": "之江实验室三体计算星座指挥控制大厅",
+    "credit": "浙江在线 / 摄影：汪雨晨",
+    "kind": "现场实拍",
+    "sourcePage": "https://zjnews.zjol.com.cn/yc/qmt/202505/t20250514_30994148.shtml",
+    "original": "https://meizi-zjol-1577-pub.zjol.com.cn/yc/qmt/202505/1922602779788795910_1280px.jpg",
+    "originalSHA256": "6b281059e50d0f65c83d4583e1b3dc071d1dacefe7fbbfe276a9d0ebc5ac8573",
+    "width": 800,
+    "height": 328
+  }
+}

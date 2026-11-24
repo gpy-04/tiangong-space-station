@@ -1,0 +1,100 @@
+/* Shared identity: the same navy surfaces, warm gold actions and fine rules in every chapter. */
+:root{--bg:#070e14!important;--fg:#e8eef1!important;--dim:#9aafbe!important;--line:#adc4d521!important;--accent:#e7ac70!important;--paper:#101e29!important;color-scheme:dark!important}
+html,body,#app{background:#070e14;color:#e8eef1}button:focus-visible,a:focus-visible,input:focus-visible{outline-color:#e7ac70}
+[data-exhibit=station] .topbar{display:none!important}
+[data-exhibit=station] .navigation,[data-exhibit=station] .viewport,[data-exhibit=station] .inspector{top:0}
+[data-exhibit=station] .scene-heading h1{color:#e8eef1}
+[data-exhibit=station] .nav-item.selected{background:#c88d4820;border-color:#bb894742}
+[data-exhibit=station] .navigation,[data-exhibit=station] .inspector,[data-exhibit=station] .controlbar{background:#0b141c}
+/* Preserve the interior and cinematic viewport rules after removing the duplicate brand header. */
+[data-exhibit=station] .cinema .viewport{inset:0}
+[data-exhibit=rocket] .masthead,[data-exhibit=rocket] .hl-head{display:none!important}
+[data-exhibit=rocket] .interface{background:#070e14}
+[data-exhibit=rocket] .workspace{padding:0 24px;gap:20px;background:#0b141c}
+[data-exhibit=rocket] .left-panel,[data-exhibit=rocket] .right-panel{background:#0b141c;color:#e8eef1}
+[data-exhibit=rocket] .left-panel h1{font-size:35px;letter-spacing:0;color:#e8eef1}
+[data-exhibit=rocket] .left-panel h1 span{font-size:17px;color:#9aafbe}
+[data-exhibit=rocket] .intro,[data-exhibit=rocket] .eyebrow,[data-exhibit=rocket] .section-caption,[data-exhibit=rocket] .section-caption span,[data-exhibit=rocket] .left-note,[data-exhibit=rocket] .section-desc,[data-exhibit=rocket] .part,[data-exhibit=rocket] .part-n,[data-exhibit=rocket] .section-index{color:#9aafbe}
+[data-exhibit=rocket] .part{border:1px solid transparent;border-radius:3px;min-height:38px;background:#101e29;color:#9aafbe}
+[data-exhibit=rocket] .part.active{background:#c88d4820;border-color:#bb894742;color:#f1ddc8;font-weight:400}
+[data-exhibit=rocket] .part.active .part-n,[data-exhibit=rocket] .part-arrow{color:#e7ac70}
+[data-exhibit=rocket] .part:hover{background:#b7c9d00a}
+[data-exhibit=rocket] .start-guide{background:#e7ac70;color:#14212a;border:1px solid #e7ac70;font-weight:500;box-shadow:none}
+[data-exhibit=rocket] .right-panel{border:1px solid #adc4d521;border-radius:0;scrollbar-color:#3d5362 transparent}
+[data-exhibit=rocket] .right-panel h2,[data-exhibit=rocket] .mini-spec strong{color:#e8eef1}
+[data-exhibit=rocket] .right-panel .principle{border-color:#adc4d521}
+[data-exhibit=rocket] .principle-head,[data-exhibit=rocket] .principle p{color:#a5bbc9}
+[data-exhibit=rocket] .principle-head i{background:#e7ac701c;color:#e7ac70}
+[data-exhibit=rocket] .detail-controls button,[data-exhibit=rocket] .engine-entry{background:#101e29;border-color:#45607155;color:#c1d0db}
+[data-exhibit=rocket] .detail-controls button:hover{color:#e7ac70;border-color:#cda06b60}
+[data-exhibit=rocket] .detail-controls .on{color:#e7ac70;background:#c88d4815}
+[data-exhibit=rocket] .detail-controls button>i{background:#334b59}
+[data-exhibit=rocket] .detail-controls button.on>i{background:#a17c53}
+[data-exhibit=rocket] .range-hints,[data-exhibit=rocket] .explode-title{color:#8da5b6}
+[data-exhibit=rocket] .fact-list>div{border-color:#adc4d521;color:#c4d2dc}
+[data-exhibit=rocket] .fact-list span{color:#90a7b8}
+[data-exhibit=rocket] .transport{background:#0b141c;border-color:#adc4d521;color:#9aafbe}
+[data-exhibit=rocket] .transport-title strong{color:#d7e0e6}
+[data-exhibit=rocket] .transport #fullscreen{display:none}
+[data-exhibit=rocket] .transport-title .tag,[data-exhibit=rocket] .timeline-ticks button,[data-exhibit=rocket] .transport-bottom,[data-exhibit=rocket] .clock>span{color:#6e899c}
+[data-exhibit=rocket] .timeline-ticks i{background:#577080}
+[data-exhibit=rocket] .play{background:#e7ac70;color:#13202a;border-color:#e7ac70}
+[data-exhibit=rocket] input[type=range]{accent-color:#e7ac70;background:#354c5b}
+[data-exhibit=rocket] input[type=range]::-webkit-slider-runnable-track{background:#354c5b}
+[data-exhibit=rocket] input[type=range]::-webkit-slider-thumb{background:#10202b;border-color:#e7ac70}
+[data-exhibit=rocket] .scene-pill,[data-exhibit=rocket] .view-controls,[data-exhibit=rocket] .lighting-switch button{color:#bdcfdb;background:#0d1b25ec;border-color:#63809650;box-shadow:none}
+[data-exhibit=rocket] .view-controls button.active{background:#c88d4820;color:#edc59a}
+[data-exhibit=rocket] .view-controls button:hover{color:#e7ac70}
+[data-exhibit=rocket] .view-controls #reset{border-color:#63809650}
+[data-exhibit=rocket] .lighting-next,[data-exhibit=rocket] .viewport-top,[data-exhibit=rocket] .dimension span,[data-exhibit=rocket] #gesture{color:#a5b8c7}
+[data-exhibit=rocket] .label{color:#c6d6e2}
+[data-exhibit=rocket] .label span{background:#0d1923d4}
+[data-exhibit=rocket] .label:after{background:#e7ac70}
+[data-exhibit=rocket] .cabin-entry{background:#0d1b25ed;border-color:#63809650;color:#dde7ee}
+[data-exhibit=rocket] .cabin-entry small{color:#91a8b9}
+[data-exhibit=rocket] .cabin-entry em{color:#e7ac70}
+[data-exhibit=rocket] .modal-backdrop{background:#02070bce;backdrop-filter:blur(6px)}
+[data-exhibit=rocket] .modal{background:#0c1923;color:#e8eef1;border:1px solid #46607166}
+[data-exhibit=rocket] .modal p,[data-exhibit=rocket] .modal-body,[data-exhibit=rocket] .modal .smallprint{color:#9aafbe}
+[data-exhibit=rocket] .modal a{color:#dcbc96}
+[data-exhibit=rocket] .notice,[data-exhibit=rocket] .flow-node{background:#142633;border-color:#4b657555;color:#b7c8d5}
+[data-exhibit=rocket] .toast{background:#132330ef;border:1px solid #cda06b50;color:#e5c3a0}
+[data-exhibit=rocket] .haolong-page{background:#070e14;color:#e8eef1}
+[data-exhibit=rocket] .hl-body{background:#070e14}
+[data-exhibit=rocket] .hl-panel,[data-exhibit=rocket] .hl-footer{background:#0b141c;color:#c1d0db;border-color:#adc4d521}
+[data-exhibit=rocket] .hl-parts button,[data-exhibit=rocket] .hl-actions button,[data-exhibit=rocket] .hl-mission button,[data-exhibit=rocket] .hl-tail-list button{background:#101e29;border-color:#45607155;color:#a9bfce}
+[data-exhibit=rocket] .hl-parts button.active,[data-exhibit=rocket] .hl-mission button.active,[data-exhibit=rocket] .hl-tail-list button.active{background:#c88d4820;border-color:#bb894742;color:#edc59a;box-shadow:none}
+[data-exhibit=rocket] .hl-actions button:first-child,[data-exhibit=rocket] .hl-tail-launch #hl-tail-explode{background:#dca367;color:#13212b;border-color:#dca367}
+[data-exhibit=rocket] .hl-copy h2,[data-exhibit=rocket] .hl-specs strong{color:#e8eef1}
+[data-exhibit=rocket] .hl-copy p,[data-exhibit=rocket] .hl-science p,[data-exhibit=rocket] .hl-note,[data-exhibit=rocket] .hl-footer>p{color:#9aafbe}
+[data-exhibit=rocket] .hl-section-head,[data-exhibit=rocket] .hl-science>span{color:#cdb08b}
+[data-exhibit=rocket] .hl-specs,[data-exhibit=rocket] .hl-tail-lab,[data-exhibit=rocket] .hl-science{border-color:#adc4d521}
+[data-exhibit=rocket] .hl-specs span,[data-exhibit=rocket] .hl-specs small,[data-exhibit=rocket] .hl-parts small{color:#7b96a8}
+[data-exhibit=rocket] .hl-tail-explanation{background:#142330;border-color:#c99d69;color:#c1d0db}
+[data-exhibit=rocket] .hl-tail-explanation p{color:#9aafbe}
+[data-exhibit=rocket] .hl-tail-launch #hl-tail-cg{background:#101e29;color:#dfbd95;border-color:#45607155}
+[data-exhibit=rocket] .hl-modal-backdrop{background:#02070bce}
+[data-exhibit=rocket] .hl-modal-backdrop article{background:#0c1923;color:#e8eef1;border-color:#46607166}
+[data-exhibit=rocket] .hl-modal-backdrop p{color:#9aafbe}
+[data-exhibit=rocket] .hl-modal-backdrop a{color:#dcbc96}
+[data-exhibit=rocket] .hl-stage-modes,[data-exhibit=rocket] .hl-view-controls{background:#0d1b25ec;border-color:#63809650;color:#b8cad7}
+[data-exhibit=rocket] .hl-stage-modes button.active,[data-exhibit=rocket] .hl-view-controls button.active{background:#c88d4820;color:#e7bc8d}
+[data-exhibit=rocket] .hl-stage-modes #hl-arms,[data-exhibit=rocket] .hl-stage-modes #hl-fairing{color:#e7ac70;border-color:#63809650}
+[data-exhibit=rocket] .hl-view-badge{background:#0d1b25df;border-color:#63809650;color:#b9cdda}
+[data-exhibit=rocket] .hl-scene-heading h1{color:#e5edf3;text-shadow:0 2px 10px #07111c}
+[data-exhibit=rocket] .hl-scene-heading h1 small,[data-exhibit=rocket] .hl-scene-heading p,[data-exhibit=rocket] .hl-gesture{color:#a3b8c8}
+[data-exhibit=rocket] .hl-cg-entry{background:#0d1b25ed;color:#e8d0b0;border-color:#63809650}
+[data-exhibit=rocket] .cabin-overlay,[data-exhibit=rocket] .cabin-head,[data-exhibit=rocket] .cabin-panel,[data-exhibit=rocket] .cabin-foot{background:#0b141c;color:#d3dfe7;border-color:#adc4d521}
+[data-exhibit=rocket] .cabin-head h2,[data-exhibit=rocket] .cabin-panel h3{color:#e8eef1}
+[data-exhibit=rocket] .cabin-head small,[data-exhibit=rocket] .cabin-panel>p,[data-exhibit=rocket] .cabin-note p,[data-exhibit=rocket] .cabin-topline,[data-exhibit=rocket] .cabin-foot{color:#9aafbe}
+[data-exhibit=rocket] .cabin-head>button,[data-exhibit=rocket] .cabin-actions{border-color:#adc4d521}
+[data-exhibit=rocket] .cabin-badge,[data-exhibit=rocket] .cabin-annotation,[data-exhibit=rocket] .cabin-home{background:#0d1b25ed;color:#b8cdda;border-color:#63809650}
+[data-exhibit=rocket] .cabin-tabs button{background:#101e29;color:#a9bfce;border-color:#45607155}
+[data-exhibit=rocket] .cabin-tabs button.active{background:#c88d4820;border-color:#bb894742;color:#edc59a;box-shadow:none}
+[data-exhibit=rocket] .cabin-tabs button.active span{color:#e7ac70}
+[data-exhibit=rocket] .cabin-actions button,[data-exhibit=rocket] .engine-primary button{background:#dca367;color:#13212b;border-color:#dca367}
+[data-exhibit=rocket] .cabin-actions button+button,[data-exhibit=rocket] .engine-primary button+button{background:#101e29;color:#b8cdda;border-color:#45607155}
+[data-exhibit=rocket] .engine-steps{color:#809bac;border-color:#adc4d521}
+[data-exhibit=rocket] .engine-model-label{background:#0d1b25ed;color:#b8cdda;border-color:#63809650}
+@media(max-width:900px){[data-exhibit=station] .inspector{top:auto}[data-exhibit=rocket] .workspace{padding:0 18px;gap:12px}}
+@media(max-width:600px){[data-exhibit=rocket] .workspace{padding:0 16px}[data-exhibit=rocket] .left-panel h1{font-size:29px}}
