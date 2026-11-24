@@ -1,9 +1,11 @@
 {
   "passed": true,
-  "date": "2026-11-24T05:12:02.932Z",
+  "date": "2026-11-24T05:20:10.460Z",
   "historyCount": 20,
   "localCount": 4,
-  "museumMode": "text",
+  "photoCount": 20,
+  "museumMode": "illustrated-scroll",
+  "photoAttributionVisible": false,
   "chapters": [
     "museum",
     "station",
@@ -21,20 +23,22 @@
   "errors": [],
   "network": [],
   "checks": [
-    "20 项历史成就连续显示，纯文字页面可通过滚轮自然下拉",
+    "20 项历史成就各配一张真实影像，内嵌图片全部解码成功，纵向滚轮自然阅读",
+    "图片点击放大与 Esc 关闭正常，页面不列图片出处且保留阅读位置",
     "杭州目录定位准确，返回历史馆保留阅读位置",
     "空间站透视、爆炸与舱内相机键盘移动",
     "长征十号、昊龙、发动机、座舱进入与返回",
-    "320 / 390 / 768 / 1600 像素宽度无横向溢出，手机可下拉阅读全文",
+    "320 / 390 / 768 / 1600 像素宽度无横向溢出，手机可下拉阅读全部图文",
     "历史馆末尾可继续进入空间站，三章导航与移动端模型正常",
-    "减少动态效果偏好下全部文字直接可见"
+    "减少动态效果偏好下全部历史图文直接展示"
   ],
   "inspect": {
     "chapter": "station",
-    "museumMode": "text",
+    "museumMode": "illustrated-scroll",
     "historyCount": 20,
+    "photoCount": 20,
     "localCount": 4,
-    "museumScroll": 5379,
+    "museumScroll": 10999,
     "loaded": {
       "station": true,
       "rocket": true

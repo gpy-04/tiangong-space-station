@@ -1,6 +1,6 @@
 # 天宫 · 中国空间站交互图鉴
 
-新增整合版：[`exhibition/index.html`](exhibition/index.html)，依次包含历史博物馆、天宫空间站、火箭与发射。历史馆为可直接向下滚动的纯文字时间线，连续展示 20 项历史成就，并突出杭州与浙江的四项贡献。操作与重新构建说明见 [`exhibition/README.md`](exhibition/README.md)。
+新增整合版：[`exhibition/index.html`](exhibition/index.html)，依次包含历史博物馆、天宫空间站、火箭与发射。历史馆可直接向下滚动，20 项历史成就各配一张真实图片，支持点击放大；页面不列图片出处，并突出杭州与浙江的四项贡献。操作与重新构建说明见 [`exhibition/README.md`](exhibition/README.md)。
 
 双击 `index.html` 即可使用，资源已内嵌，运行时无需网络。
 

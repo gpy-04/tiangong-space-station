@@ -5,6 +5,7 @@ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const names={museum:'第一章 · 中国航天历史博物馆',station:'第二章 · 天宫空间站',rocket:'第三章 · 火箭与发射'};
 let current='museum',submodel='rocket',announcementTimer=0,museumScroll=0;
 const documents={station:JSON.parse($('#stationDocument').textContent),rocket:JSON.parse($('#launchDocument').textContent)};
+const photos=JSON.parse($('#photoDocuments').textContent);
 const bridge=JSON.parse($('#bridgeSource').textContent),embedCSS=JSON.parse($('#embedStyles').textContent);
 const loaded={station:false,rocket:false},ready={station:false,rocket:false},waiters={station:[],rocket:[]};
 const periods=[
@@ -36,14 +37,17 @@ function renderHistory(){
  $('#historyEntries').innerHTML=periods.map((period,i)=>{
   const items=HISTORY.filter(d=>{const year=+d.date.slice(0,4);return year<=period.until&&(i===0||year>periods[i-1].until)});
   return `<section class="history-era" id="era-${period.id}" aria-labelledby="era-title-${period.id}" tabindex="-1"><header class="era-heading"><span class="era-number">0${i+1}</span><div><p>${period.range}</p><h2 id="era-title-${period.id}">${period.name}</h2></div></header>${items.map(d=>{
-   const local=d.era==='杭州与浙江',meaning=d.achievement.split('。')[0]+'。';
-   return `<article class="history-entry${local?' local-entry':''}" data-history-id="${d.id}" id="event-${d.id}" tabindex="-1"><div class="history-entry-date"><time datetime="${d.date.replaceAll('.','-')}"><b>${d.date.slice(0,4)}</b><span>${d.date.slice(5).replace('.',' / ')}</span></time>${local?`<span class="local-marker">${escape(d.local)}</span>`:''}</div><div class="history-entry-copy"><span class="entry-category">${escape(local?d.badge:d.era)}</span><h3>${escape(d.name)}</h3><p class="history-entry-summary">${escape(d.summary)}${escape(meaning)}</p></div></article>`;
+   const local=d.era==='杭州与浙江',meaning=d.achievement.split('。')[0]+'。',photo=photos[d.id];
+   return `<article class="history-entry${local?' local-entry':''}" data-history-id="${d.id}" id="event-${d.id}" tabindex="-1"><div class="history-entry-date"><time datetime="${d.date.replaceAll('.','-')}"><b>${d.date.slice(0,4)}</b><span>${d.date.slice(5).replace('.',' / ')}</span></time>${local?`<span class="local-marker">${escape(d.local)}</span>`:''}</div><div class="history-entry-body"><div class="history-entry-copy"><span class="entry-category">${escape(local?d.badge:d.era)}</span><h3>${escape(d.name)}</h3><p class="history-entry-summary">${escape(d.summary)}${escape(meaning)}</p></div><figure class="history-entry-photo"><button data-photo-id="${d.id}" aria-label="放大：${escape(d.name)}"><img src="${photo.data}" width="${photo.width}" height="${photo.height}" loading="lazy" decoding="async" alt="${escape(photo.caption)}"><span class="photo-expand-mark" aria-hidden="true">⤢</span></button></figure></div></article>`;
   }).join('')}</section>`;
  }).join('');
  $('#museumContents').innerHTML=periods.map((p,i)=>`<a data-history-jump href="#era-${p.id}"><span>0${i+1}</span>${p.name}</a>`).join('')+'<span class="contents-label">杭州与浙江</span>'+HISTORY.filter(d=>d.era==='杭州与浙江').map(d=>`<a class="local-jump" data-history-jump href="#event-${d.id}"><span>${d.date.slice(0,4)}</span>${escape(d.short)}</a>`).join('');
 }
 function jumpTo(id){const target=document.getElementById(id);if(!target)return;const top=window.scrollY+target.getBoundingClientRect().top-$('.global-header').offsetHeight-22;target.focus({preventScroll:true});window.scrollTo({top,behavior:reduced?'instant':'smooth'})}
 renderHistory();
+$('#historyEntries').addEventListener('click',e=>{const button=e.target.closest('[data-photo-id]');if(!button)return;const photo=photos[button.dataset.photoId];$('#largePhoto').src=photo.data;$('#largePhoto').alt=photo.caption;$('#photoDialog').showModal()});
+$('.photo-dialog-close').onclick=()=>$('#photoDialog').close();
+$('#photoDialog').addEventListener('click',e=>{if(e.target===$('#photoDialog'))$('#photoDialog').close()});
 $$('[data-history-jump]').forEach(a=>a.onclick=e=>{e.preventDefault();jumpTo(a.getAttribute('href').slice(1))});
 $('#museumTop').onclick=e=>{e.preventDefault();window.scrollTo({top:0,behavior:reduced?'instant':'smooth'})};
 $$('[data-chapter]').forEach(b=>b.onclick=()=>navigate(b.dataset.chapter));
@@ -65,4 +69,4 @@ addEventListener('popstate',()=>navigate(location.hash.slice(1),{announce:false,
 addEventListener('hashchange',()=>{const chapter=location.hash.slice(1);if(names[chapter]&&current!==chapter)navigate(chapter,{history:false})});
 document.addEventListener('visibilitychange',()=>{if(current!=='museum'&&ready[current])$('#'+current+'Frame').contentWindow.__setExhibitVisible(!document.hidden)});
 navigate(names[location.hash.slice(1)]?location.hash.slice(1):'museum',{announce:false,history:false});
-window.AEROSPACE={navigate,history:HISTORY,inspect:()=>({chapter:current,museumMode:'text',historyCount:HISTORY.length,localCount:HISTORY.filter(d=>d.era==='杭州与浙江').length,museumScroll:current==='museum'?window.scrollY:museumScroll,loaded:{...loaded},ready:{...ready}})};
+window.AEROSPACE={navigate,history:HISTORY,inspect:()=>({chapter:current,museumMode:'illustrated-scroll',historyCount:HISTORY.length,photoCount:Object.keys(photos).length,localCount:HISTORY.filter(d=>d.era==='杭州与浙江').length,museumScroll:current==='museum'?window.scrollY:museumScroll,loaded:{...loaded},ready:{...ready}})};
