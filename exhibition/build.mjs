@@ -17,6 +17,7 @@ const encode=x=>JSON.stringify(x).replace(/</g,'\\u003c');
 const manifest=JSON.parse(fs.readFileSync(dir+'/photos.json','utf8'));
 const photos=Object.fromEntries(Object.entries(manifest).map(([id,p])=>[id,{caption:p.caption,width:p.width,height:p.height,data:'data:image/webp;base64,'+fs.readFileSync(dir+'/'+p.file).toString('base64')}]));
 let html=fs.readFileSync(dir+'/shell.html','utf8')
+ .replace('/* HERO PHOTO */',()=>photos.station.data)
  .replace('/* FONTS */',()=>`@font-face{font-family:Inter;src:url(data:font/woff2;base64,${font});font-weight:100 900;font-display:swap}@font-face{font-family:JetBrains;src:url(data:font/woff2;base64,${mono});font-display:swap}`)
  .replace('/* STYLES */',()=>fs.readFileSync(dir+'/style.css','utf8'))
  .replace('/* LAUNCH */',()=>encode(launch)).replace('/* STATION */',()=>encode(station))

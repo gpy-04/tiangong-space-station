@@ -12,6 +12,9 @@ dialog{width:min(760px,calc(100vw - 40px));max-height:84vh;border:1px solid #466
 @media(min-width:901px) and (max-width:1100px){.history-entry-body{grid-template-columns:minmax(0,1fr);gap:20px}.history-entry-photo button{height:300px}}
 @media(min-width:601px) and (max-width:900px){.history-entry-body{grid-template-columns:minmax(0,1fr);gap:20px}.history-entry-photo button{height:300px}}
 @media(max-width:600px){.history-entry-body{grid-template-columns:minmax(0,1fr);gap:19px}.history-entry-photo button{height:auto;aspect-ratio:4 / 3;padding:8px}.history-entry-photo img{min-height:0}.photo-dialog{width:calc(100vw - 20px);height:84dvh;padding:43px 12px 12px}.photo-expand-mark{right:8px;bottom:8px}}
+.history-intro-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,500px);align-items:center;gap:64px;margin:36px 0 26px}.history-intro-main h1{margin:0}.history-intro-photo{margin:0;min-width:0}.history-intro-photo img{display:block;width:100%;height:auto;aspect-ratio:500 / 359;object-fit:contain}.history-intro-bottom{gap:40px}
+@media(max-width:900px){.history-intro-main{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px}.history-intro-main h1{font-size:clamp(40px,6vw,54px);letter-spacing:2px}}
+@media(max-width:600px){.history-intro-main{grid-template-columns:minmax(0,1fr);gap:25px;margin:26px 0 24px}.history-intro-main h1{font-size:42px;margin:0}.history-intro-photo{width:100%;max-width:500px}.history-intro-bottom{gap:28px}}
 body:not([data-chapter="museum"]) .skip-link{display:none}
 @media(max-height:700px){.history-index{position:static}}
 @media(max-width:600px){.history-intro{padding-top:26px}.history-intro h1{font-size:42px;margin:26px 0 18px}.history-scroll-hint{margin-top:18px}.history-layout{padding-top:24px}.history-index{padding-bottom:22px;margin-bottom:26px}#museumContents a{min-height:33px;padding:6px 0}}
