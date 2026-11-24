@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "openPorts": [
+    {
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "remainingVertices": 0
+    },
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "remainingVertices": 0
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "remainingVertices": 0
+    },
+    {
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "remainingVertices": 0
+    },
+    {
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "remainingVertices": 0
+    }
+  ],
+  "adapters": [
+    {
+      "name": "轴向对接压力过渡段",
+      "nodePlane": -1.2,
+      "nodeRadius": 0.8662563131083085,
+      "matingPlane": -1.72,
+      "outerRadius": 0.72,
+      "innerRadius": 0.6649999999999999,
+      "wall": 0.055,
+      "worldPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "侧向对接压力过渡段 / 与实验舱承压壳齐平",
+      "nodePlane": -1.2,
+      "nodeRadius": 0.8662563131083085,
+      "matingPlane": -1.48,
+      "outerRadius": 0.78,
+      "innerRadius": 0.725,
+      "wall": 0.055,
+      "worldPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "侧向对接压力过渡段 / 与实验舱承压壳齐平",
+      "nodePlane": -1.2,
+      "nodeRadius": 0.8662563131083085,
+      "matingPlane": -1.48,
+      "outerRadius": 0.78,
+      "innerRadius": 0.725,
+      "wall": 0.055,
+      "worldPosition": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "天底端口压力过渡段",
+      "nodePlane": -1.2,
+      "nodeRadius": 0.8662563131083085,
+      "matingPlane": -1.48,
+      "outerRadius": 0.75,
+      "innerRadius": 0.695,
+      "wall": 0.055,
+      "worldPosition": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "coreNodeContact": {
+    "nodePlane": 1.0064,
+    "nodeRadius": 1.0851539245655428,
+    "corePlane": 1.33,
+    "coreRadius": 1.32,
+    "wall": 0.055
+  },
+  "tailEnds": [
+    {
+      "module": "tianhe",
+      "end": 15.100000381469727,
+      "minimumRadius": 0.6949999735886624,
+      "maximumRadius": 0.7518905997276306
+    },
+    {
+      "module": "wentian",
+      "end": 17.5,
+      "minimumRadius": 0.7749999593409884,
+      "maximumRadius": 0.8316751060632344
+    },
+    {
+      "module": "mengtian",
+      "end": 17.5,
+      "minimumRadius": 0.7749999593409884,
+      "maximumRadius": 0.8316751060632344
+    }
+  ],
+  "spacecraftMatingPlane": 15.1,
+  "shipClearance": [
+    {
+      "explode": 0,
+      "dock": false,
+      "time": 0,
+      "frontGap": 0,
+      "aftGap": 0
+    },
+    {
+      "explode": 0.8,
+      "dock": false,
+      "time": 0,
+      "frontGap": 6.4,
+      "aftGap": 6.4
+    },
+    {
+      "explode": 0,
+      "dock": true,
+      "time": 0,
+      "frontGap": 8,
+      "aftGap": 8.000000000000002
+    },
+    {
+      "explode": 0,
+      "dock": true,
+      "time": 3,
+      "frontGap": 4.571428571428571,
+      "aftGap": 4.571428571428571
+    },
+    {
+      "explode": 0,
+      "dock": true,
+      "time": 7,
+      "frontGap": 0,
+      "aftGap": 0
+    },
+    {
+      "explode": 0.8,
+      "dock": true,
+      "time": 11,
+      "frontGap": 6.4,
+      "aftGap": 6.4
+    }
+  ],
+  "station": {
+    "meshes": 512,
+    "triangles": 1224954,
+    "invalid": 0
+  },
+  "errors": []
+}

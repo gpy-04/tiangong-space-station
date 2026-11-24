@@ -1,0 +1,15 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import {pathToFileURL} from 'node:url';
+const require=createRequire('C:/Users/shangguan/.codex/skills/teardown/package.json'),{chromium}=require('playwright');
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-angle=d3d11','--ignore-gpu-blocklist']});const page=await browser.newPage({viewport:{width:1600,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.addInitScript(()=>window.__CAPTURE=true);await page.goto(pathToFileURL(process.cwd()+'/中国空间站_交互图鉴.html').href+'?nointro&inspect');await page.waitForFunction(()=>window.SIM?.ready,{timeout:120000});
+for(const v of['insideLife','insideBerth','insideGalley','insideFitness','insideHealth','insideCore']){await page.evaluate(v=>{TIANGONG.setView(v,true);SIM.render(2)},v);await page.screenshot({path:`tiangong/captures/living-${v}.png`});}
+const result=await page.evaluate(()=>{const g=TIANGONG.station.root.getObjectByName('生活区 / 睡眠 · 卫生 · 餐饮 · 锻炼');return {fixtures:g.userData.fixtures,geometry:TIANGONG.station.stats(),camera:TIANGONG.stage.camera.position.toArray(),removed:{navBottom:!!document.querySelector('.nav-bottom'),referenceButton:!!document.querySelector('#referenceBtn')}};});
+await page.evaluate(()=>{TIANGONG.setView('overview',true);TIANGONG.setState({explode:0,cut:false,xray:0});SIM.render(4)});
+const clearance=await page.evaluate(()=>TIANGONG.auditClearance());fs.writeFileSync('tiangong/living-clearance-audit.json',JSON.stringify(clearance,null,2));console.log(JSON.stringify(clearance,null,2));
+assert(clearance.passed,'Living fixture or camera clearance failed');
+await page.locator('#explodeBtn').click();await page.evaluate(()=>{TIANGONG.setView('insideLife',true);SIM.render(20)});assert.equal(await page.evaluate(()=>TIANGONG.state.explode),0);assert.equal(await page.evaluate(()=>TIANGONG.state.xray),0);
+await page.evaluate(()=>{TIANGONG.setView('insideLife',true);SIM.render(5)});
+await page.locator('#xray').evaluate(e=>{e.value='.75';e.dispatchEvent(new Event('input',{bubbles:true}));});
+const exit=await page.evaluate(()=>({inside:TIANGONG.state.interior,fov:TIANGONG.stage.camera.fov,position:TIANGONG.stage.camera.position.toArray()}));assert.equal(exit.inside,false);assert.equal(exit.fov,40);assert(exit.position[0]>4);
+await page.setViewportSize({width:390,height:844});await page.locator('#moreBtn').click();await page.locator('#morePanel [data-view="insideHealth"]').click();assert(await page.evaluate(()=>TIANGONG.state.interior));assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth),390);await page.screenshot({path:'tiangong/captures/living-mobile-health.png'});
+assert.equal(result.removed.navBottom,false);assert.equal(result.removed.referenceButton,false);assert.equal(result.geometry.invalid,0);assert.equal(errors.length,0);
+fs.writeFileSync('tiangong/living-initial-audit.json',JSON.stringify({...result,errors},null,2));console.log(JSON.stringify(result,null,2));await browser.close();

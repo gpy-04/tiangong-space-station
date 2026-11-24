@@ -1,0 +1,172 @@
+{
+  "label": "final",
+  "readyMs": 5444,
+  "htmlBytes": 7449065,
+  "results": [
+    {
+      "view": "overview",
+      "frameMedianMs": 3.599999999627471,
+      "poseMedianMs": 0,
+      "calls": 516,
+      "submittedTriangles": 1273402,
+      "stats": {
+        "meshes": 512,
+        "triangles": 1224954,
+        "invalid": 0
+      },
+      "solar": {
+        "area": 491.75750000000005,
+        "incident": 0.9016416167287317,
+        "power": 130.34573270085681
+      },
+      "quality": {
+        "shadowRevision": 3,
+        "cabinRevision": -1,
+        "pixelRatio": 1,
+        "shadowMapSize": 2048
+      }
+    },
+    {
+      "view": "insideWT",
+      "frameMedianMs": 1.700000001117587,
+      "poseMedianMs": 0,
+      "calls": 139,
+      "submittedTriangles": 426854,
+      "stats": {
+        "meshes": 512,
+        "triangles": 1224954,
+        "invalid": 0
+      },
+      "solar": {
+        "area": 491.75750000000005,
+        "incident": 0.9016416167287317,
+        "power": 130.34573270085681
+      },
+      "quality": {
+        "shadowRevision": 3,
+        "cabinRevision": 3,
+        "occupiedLamp": [
+          -5,
+          0.95,
+          0
+        ],
+        "pixelRatio": 1,
+        "shadowMapSize": 2048
+      }
+    },
+    {
+      "view": "insideMT",
+      "frameMedianMs": 1.5,
+      "poseMedianMs": 0,
+      "calls": 109,
+      "submittedTriangles": 405952,
+      "stats": {
+        "meshes": 512,
+        "triangles": 1224954,
+        "invalid": 0
+      },
+      "solar": {
+        "area": 491.75750000000005,
+        "incident": 0.9016416167287317,
+        "power": 130.34573270085681
+      },
+      "quality": {
+        "shadowRevision": 3,
+        "cabinRevision": 3,
+        "occupiedLamp": [
+          5,
+          0.95,
+          0
+        ],
+        "pixelRatio": 1,
+        "shadowMapSize": 2048
+      }
+    },
+    {
+      "view": "insideLife",
+      "frameMedianMs": 1.599999999627471,
+      "poseMedianMs": 0,
+      "calls": 292,
+      "submittedTriangles": 963690,
+      "stats": {
+        "meshes": 512,
+        "triangles": 1224954,
+        "invalid": 0
+      },
+      "solar": {
+        "area": 491.75750000000005,
+        "incident": 0.9016416167287317,
+        "power": 130.34573270085681
+      },
+      "quality": {
+        "shadowRevision": 3,
+        "cabinRevision": 3,
+        "occupiedLamp": [
+          0,
+          0.78,
+          5.1
+        ],
+        "pixelRatio": 1,
+        "shadowMapSize": 2048
+      }
+    },
+    {
+      "view": "xray",
+      "frameMedianMs": 5.400000000372529,
+      "poseMedianMs": 0,
+      "calls": 558,
+      "submittedTriangles": 1738618,
+      "stats": {
+        "meshes": 512,
+        "triangles": 1224954,
+        "invalid": 0
+      },
+      "solar": {
+        "area": 491.75750000000005,
+        "incident": 0.9016416167287317,
+        "power": 130.34573270085681
+      },
+      "quality": {
+        "shadowRevision": 4,
+        "cabinRevision": 3,
+        "occupiedLamp": [
+          0,
+          0.78,
+          5.1
+        ],
+        "pixelRatio": 1,
+        "shadowMapSize": 2048
+      }
+    },
+    {
+      "view": "exploded",
+      "frameMedianMs": 2.700000001117587,
+      "poseMedianMs": 0,
+      "calls": 548,
+      "submittedTriangles": 1726834,
+      "stats": {
+        "meshes": 512,
+        "triangles": 1224954,
+        "invalid": 0
+      },
+      "solar": {
+        "area": 491.75750000000005,
+        "incident": 0.9016416167287317,
+        "power": 130.34573270085681
+      },
+      "quality": {
+        "shadowRevision": 5,
+        "cabinRevision": 3,
+        "occupiedLamp": [
+          0,
+          0.78,
+          5.1
+        ],
+        "pixelRatio": 1,
+        "shadowMapSize": 2048
+      }
+    }
+  ],
+  "errors": [],
+  "note": "Same Chrome D3D11, viewport 1600x1000, 30 frames per view, GPU completion included. Not a universal FPS guarantee."
+}

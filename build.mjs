@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+const root=path.dirname(new URL(import.meta.url).pathname).replace(/^\/([A-Za-z]:)/,'$1');
+const kit='C:/Users/shangguan/.codex/skills/teardown';
+execFileSync(process.execPath,[kit+'/sims/build.mjs','./tiangong'],{stdio:'inherit'});
+let html=fs.readFileSync('teardown-out/dist/tiangong.html','utf8').replace('<html lang="en">','<html lang="zh-CN">').replace('<title>tiangong</title>','<title>天宫 · 中国空间站交互图鉴</title>');
+let license=[kit+'/LICENSE',kit+'/node_modules/three/LICENSE',kit+'/node_modules/@fontsource-variable/inter/LICENSE',kit+'/node_modules/@fontsource/jetbrains-mono/LICENSE'].map(f=>fs.readFileSync(f,'utf8')).join('\n\n');
+html=html.replace('</head>',`<!-- LICENSES\n${license.replace(/-->/g,'-- >')}\n-->\n</head>`);
+fs.writeFileSync('tiangong/index.html',html);fs.writeFileSync('中国空间站_交互图鉴.html',html);fs.writeFileSync('teardown-out/dist/tiangong.html',html);
+console.log('Offline HTML: '+(Buffer.byteLength(html)/1024/1024).toFixed(2)+' MB');

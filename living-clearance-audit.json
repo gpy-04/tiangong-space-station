@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "fixtureCount": 11,
+  "fixtures": [
+    {
+      "name": "独立睡眠舱 1",
+      "min": [
+        -1.096,
+        -0.6839999794960022,
+        1.9609999775886537
+      ],
+      "max": [
+        -0.405,
+        0.7900000002980232,
+        3.9390000224113466
+      ]
+    },
+    {
+      "name": "独立睡眠舱 2",
+      "min": [
+        0.405,
+        -0.6839999794960022,
+        1.9609999775886537
+      ],
+      "max": [
+        1.1029999998211863,
+        0.7900000002980232,
+        3.9390000224113466
+      ]
+    },
+    {
+      "name": "独立睡眠舱 3",
+      "min": [
+        -1.096,
+        -0.6839999794960022,
+        4.110999977588653
+      ],
+      "max": [
+        -0.405,
+        0.7900000002980232,
+        6.089000022411346
+      ]
+    },
+    {
+      "name": "独立卫生区",
+      "min": [
+        0.4269999999999999,
+        -0.6839999794960022,
+        4.110999977588653
+      ],
+      "max": [
+        1.09,
+        0.7900000002980232,
+        6.089000022411346
+      ]
+    },
+    {
+      "name": "跑台 / 隔振与身体加载",
+      "min": [
+        -0.32705941796302795,
+        -0.935,
+        2.34
+      ],
+      "max": [
+        0.32705941796302795,
+        0.222,
+        3.96
+      ]
+    },
+    {
+      "name": "太空厨房 / 食品加热与饮水",
+      "min": [
+        -1.57,
+        -1.06,
+        8.135
+      ],
+      "max": [
+        -0.8988706660270691,
+        1.06,
+        9.165000000000001
+      ]
+    },
+    {
+      "name": "折叠餐桌 / 食物与餐具固定",
+      "min": [
+        -1.4825,
+        -0.7648899004429505,
+        9.615
+      ],
+      "max": [
+        -0.845,
+        0.94,
+        11.084999999999999
+      ]
+    },
+    {
+      "name": "功率自行车 / 座椅与脚踏束缚",
+      "min": [
+        -1.24,
+        -1.3925,
+        11.790000000000001
+      ],
+      "max": [
+        -0.52,
+        -0.197,
+        12.65
+      ]
+    },
+    {
+      "name": "日常物资与应急设备",
+      "min": [
+        -1.62,
+        -1.0825,
+        7.6499999999999995
+      ],
+      "max": [
+        -1.0410000000000001,
+        -0.225,
+        8.065
+      ]
+    },
+    {
+      "name": "医监医保 / 医疗用品与便携监测",
+      "min": [
+        1.0290000000000001,
+        -0.87,
+        12.315
+      ],
+      "max": [
+        1.62,
+        0.87,
+        13.084999999999999
+      ]
+    },
+    {
+      "name": "抗阻锻炼装置 / 收拢状态",
+      "min": [
+        -1.6050000000000002,
+        -0.8,
+        12.860000000000001
+      ],
+      "max": [
+        -1.0414730203151703,
+        0.8,
+        13.24
+      ]
+    }
+  ],
+  "unrelatedFixtureAabbOverlaps": [],
+  "hull": {
+    "checkedVertices": 287424,
+    "minimumGap": 0.0005298234276100988,
+    "outsideVertices": 0,
+    "worst": "独立睡眠舱 1 / d0d6"
+  },
+  "interiorHulls": [
+    {
+      "kind": "tianhe",
+      "checkedVertices": 230971,
+      "outsideVertices": 0,
+      "minimumGap": 0.03732524593846076,
+      "worst": "tianhe / interior / 931f",
+      "worstPoint": [
+        -1.3623000383377075,
+        1.3732500076293945,
+        13.199999809265137
+      ]
+    },
+    {
+      "kind": "wentian",
+      "checkedVertices": 462839,
+      "outsideVertices": 0,
+      "minimumGap": 0.04099347915721463,
+      "worst": "wentian / interior / 19f8",
+      "worstPoint": [
+        1.39017653465271,
+        1.39017653465271,
+        1.6549999713897705
+      ]
+    },
+    {
+      "kind": "mengtian",
+      "checkedVertices": 447313,
+      "outsideVertices": 0,
+      "minimumGap": 0.04099347915721463,
+      "worst": "mengtian / interior / 19f8",
+      "worstPoint": [
+        1.39017653465271,
+        1.39017653465271,
+        1.6549999713897705
+      ]
+    }
+  ],
+  "bikeFloorGap": 2.220446049250313e-16,
+  "routes": [
+    {
+      "name": "insideHealth",
+      "samples": 61,
+      "minimumSurfaceDistance": 0.9393453415760837,
+      "cameraRadius": 0.12,
+      "clearance": 0.8193453415760837,
+      "worst": "tianhe / interior / 08dd",
+      "at": 1
+    },
+    {
+      "name": "insideCore",
+      "samples": 61,
+      "minimumSurfaceDistance": 0.6971727416756285,
+      "cameraRadius": 0.12,
+      "clearance": 0.5771727416756285,
+      "worst": "tianhe / interior / e4f0",
+      "at": 0
+    },
+    {
+      "name": "insideLife",
+      "samples": 61,
+      "minimumSurfaceDistance": 0.17800004482269294,
+      "cameraRadius": 0.12,
+      "clearance": 0.05800004482269294,
+      "worst": "跑台 / 隔振与身体加载 / f3d6",
+      "at": 0.6
+    },
+    {
+      "name": "insideBerth",
+      "samples": 61,
+      "minimumSurfaceDistance": 0.361999990940094,
+      "cameraRadius": 0.12,
+      "clearance": 0.241999990940094,
+      "worst": "独立卫生区 / 19f8",
+      "at": 0
+    },
+    {
+      "name": "insideGalley",
+      "samples": 61,
+      "minimumSurfaceDistance": 1.2075045188560045,
+      "cameraRadius": 0.12,
+      "clearance": 1.0875045188560044,
+      "worst": "隔热与防护上半壳 / 08dd",
+      "at": 0
+    },
+    {
+      "name": "insideFitness",
+      "samples": 61,
+      "minimumSurfaceDistance": 1.0155733612885034,
+      "cameraRadius": 0.12,
+      "clearance": 0.8955733612885034,
+      "worst": "tianhe / interior / 08dd",
+      "at": 1
+    },
+    {
+      "name": "insideWT",
+      "samples": 61,
+      "minimumSurfaceDistance": 0.8132650291225142,
+      "cameraRadius": 0.12,
+      "clearance": 0.6932650291225142,
+      "worst": "问天 / 三个睡眠区与卫生区 / 19f8",
+      "at": 0.8333333333333334
+    },
+    {
+      "name": "insideMT",
+      "samples": 61,
+      "minimumSurfaceDistance": 1.0947880680444677,
+      "cameraRadius": 0.12,
+      "clearance": 0.9747880680444677,
+      "worst": "mengtian / interior / e4f0",
+      "at": 0
+    }
+  ],
+  "scope": "Assembled living fixtures; conservative pairwise AABBs, vertex hull-envelope checks for living fixtures and all three cabin interiors, 61 triangle-distance samples per authored camera route with 0.12 m radius. Intentional mounting/contact joints are excluded from fixture overlap comparisons. Not an engineering full-assembly collision certification."
+}

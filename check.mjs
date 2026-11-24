@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {createRequire} from 'node:module';
+import {pathToFileURL} from 'node:url';
+const require=createRequire('C:/Users/shangguan/.codex/skills/teardown/package.json');const {chromium}=require('playwright');
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-angle=d3d11','--enable-webgl','--ignore-gpu-blocklist']});
+const page=await browser.newPage({viewport:{width:1600,height:1000},deviceScaleFactor:1});const errors=[];page.on('pageerror',e=>{errors.push(e.message);console.log('ERROR',e.message)});page.on('console',m=>{if(m.type()==='error'){errors.push(m.text());console.log(m.text())}});
+await page.addInitScript(()=>{window.__CAPTURE=true;});await page.goto(pathToFileURL(process.cwd()+'/中国空间站_交互图鉴.html').href+'?nointro&inspect');await page.waitForFunction(()=>window.SIM?.ready,{timeout:90000});
+await page.evaluate(()=>{TIANGONG.setView('overview',true);SIM.render(1);});await page.screenshot({path:'tiangong/captures/overview.png'});console.log(await page.evaluate(()=>TIANGONG.inspect()));
+await page.evaluate(()=>{TIANGONG.setState({cut:true,xray:0});TIANGONG.setView('tianhe',true);SIM.render(3)});await page.screenshot({path:'tiangong/captures/cutaway.png'});
+await page.evaluate(()=>{TIANGONG.setState({cut:true,xray:0});TIANGONG.setView('insideWT',true);SIM.render(4)});await page.screenshot({path:'tiangong/captures/inside.png'});
+await page.evaluate(()=>{TIANGONG.setState({cut:false,xray:.5,explode:.8});TIANGONG.setView('overview',true);SIM.render(5)});await page.screenshot({path:'tiangong/captures/exploded.png'});
+fs.writeFileSync('tiangong/captures/errors.json',JSON.stringify(errors,null,2));await browser.close();

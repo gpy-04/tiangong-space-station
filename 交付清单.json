@@ -1,0 +1,18 @@
+{
+  "index.html": {
+    "bytes": 7449065,
+    "sha256": "a76e0164d7cf13cca70be4c805e8a2dc51c5074c76f3ea7a0d9be5221cf317d6"
+  },
+  "中国空间站_三舱与舱内设施.glb": {
+    "bytes": 91627328,
+    "sha256": "5a1dfdffc5b65b31636486f1864c2b500a34e4b0f17c46347c740472913d983b"
+  },
+  "中国空间站_精细可编辑.blend": {
+    "bytes": 154108538,
+    "sha256": "0c4985a3055c88cf3352805c141bbc27ddcb1281ff8a2c481dbce4bcdf385b5e"
+  },
+  "中国空间站_结构导览_60fps.mp4": {
+    "bytes": 47080626,
+    "sha256": "647d752339324af57bce11be2d7afa55be2ae6de4e3815bceaf5fd699fca70b3"
+  }
+}

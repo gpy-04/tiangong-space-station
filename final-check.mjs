@@ -1,0 +1,26 @@
+import {createRequire} from 'node:module';
+import {pathToFileURL} from 'node:url';
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const require=createRequire('C:/Users/shangguan/.codex/skills/teardown/package.json');
+const {chromium}=require('playwright');
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--use-angle=d3d11','--ignore-gpu-blocklist']});
+const page=await browser.newPage({viewport:{width:1600,height:1000}}),errors=[],network=[];
+page.on('pageerror',e=>errors.push(e.message));
+await page.route(/^https?:/,r=>{network.push(r.request().url());r.abort()});
+await page.addInitScript(()=>window.__CAPTURE=true);
+await page.goto(pathToFileURL(process.cwd()+'/中国空间站_交互图鉴.html').href+'?nointro&inspect');
+await page.waitForFunction(()=>window.SIM?.ready,{timeout:120000});
+const result=await page.evaluate(()=>{
+ TIANGONG.setView('overview',true);SIM.render(2);
+ const metrics=TIANGONG.station.solarMetrics(),materials=[];
+ const unique=new Set();TIANGONG.station.root.traverse(o=>{if(o.isMesh&&o.material.name&&!unique.has(o.material)){unique.add(o.material);materials.push({name:o.material.name,metalness:o.material.metalness,roughness:o.material.roughness,normalMap:!!o.material.normalMap,roughnessMap:!!o.material.roughnessMap});}});
+ TIANGONG.setView('insideWT',true);SIM.render(3);
+ return {metrics,materials,interiorSunIntensity:TIANGONG.stage.sun.intensity,geometry:TIANGONG.station.stats()};
+});
+assert(Object.values(result.metrics).every(Number.isFinite));assert(result.metrics.incident>.8&&result.metrics.incident<=1);assert(result.metrics.power>0);assert(result.materials.some(m=>m.name.startsWith('白色')&&m.metalness===0&&m.normalMap&&m.roughnessMap));
+assert.equal(result.geometry.invalid,0);assert.equal(errors.length,0);assert.equal(network.length,0);
+await page.screenshot({path:'tiangong/captures/final-material-interior.png'});
+fs.writeFileSync('tiangong/final-material-check.json',JSON.stringify({passed:true,...result,errors,externalNetworkRequests:network},null,2));
+console.log(JSON.stringify({passed:true,metrics:result.metrics,errors,network},null,2));
+await browser.close();

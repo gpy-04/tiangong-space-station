@@ -1,0 +1,31 @@
+{
+  "state": {
+    "topic": "life",
+    "xray": 0.22,
+    "explode": 0.8,
+    "cut": false,
+    "track": true,
+    "deploy": 1,
+    "arm": false,
+    "dock": false,
+    "ships": true,
+    "labels": false,
+    "studio": false,
+    "interior": false,
+    "paused": false
+  },
+  "stats": {
+    "meshes": 512,
+    "triangles": 1224954,
+    "invalid": 0
+  },
+  "camera": [
+    43,
+    31,
+    58
+  ],
+  "calls": 1060,
+  "triangles": 2951788,
+  "errors": [],
+  "glbBytes": 91627328
+}

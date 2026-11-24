@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "closure": {
+    "passed": true,
+    "rays": 6725,
+    "misses": 0,
+    "failures": [],
+    "doorThickness": 0.056000000797212124,
+    "thresholdToFirstFloorGap": 0,
+    "observers": [
+      [
+        0,
+        0.4,
+        1.85
+      ],
+      [
+        0.28,
+        -0.35,
+        2.1
+      ],
+      [
+        -0.25,
+        0.65,
+        2.35
+      ],
+      [
+        0,
+        -0.72,
+        2.25
+      ],
+      [
+        0,
+        0,
+        1.12
+      ]
+    ],
+    "scope": "Opaque forward-end closure from four cabin positions and the reverse face; concentric rays cover the hatch, annular panel, lower sill and shell junction. Includes only the closure assembly, so the Earth, outer node and unrelated equipment cannot mask a missing face."
+  },
+  "topology": [
+    {
+      "name": "前端连续环形封板 / 舱壳安装搭接",
+      "triangles": 2048,
+      "weldedVertices": 1024,
+      "unpairedEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerate": 0,
+      "signedVolume": 0.5765128905192779,
+      "passed": true
+    },
+    {
+      "name": "前端关闭舱门 / 连续实体门板",
+      "triangles": 2044,
+      "weldedVertices": 1024,
+      "unpairedEdges": 0,
+      "inconsistentEdges": 0,
+      "degenerate": 0,
+      "signedVolume": 0.08925868677034336,
+      "passed": true
+    }
+  ],
+  "contacts": [
+    {
+      "active": true,
+      "kind": "tianhe",
+      "position": [
+        3.518075405193621e-16,
+        0.2999999999999999,
+        1.6920000524520873
+      ],
+      "direction": [
+        -1.2246467991473532e-16,
+        0,
+        -1
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "yaw": -3.141592653589793,
+      "pitch": 0,
+      "speed": 0.85,
+      "radius": 0.12,
+      "distanceToSurface": 0.12199999999999989,
+      "travel": 0.20799994754791262,
+      "collision": {
+        "triangles": 312774,
+        "cells": 1659,
+        "buildMilliseconds": 115,
+        "radius": 0.12
+      },
+      "pointerLocked": false
+    },
+    {
+      "active": true,
+      "kind": "tianhe",
+      "position": [
+        0.1361442207517131,
+        0.4771141882559224,
+        1.6920000524520873
+      ],
+      "direction": [
+        -1.249000902703301e-16,
+        0,
+        -1
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "yaw": -3.141592653589793,
+      "pitch": 0,
+      "speed": 0.85,
+      "radius": 0.12,
+      "distanceToSurface": 0.12199999999999989,
+      "travel": 0.470965579886445,
+      "collision": {
+        "triangles": 312774,
+        "cells": 1659,
+        "buildMilliseconds": 115,
+        "radius": 0.12
+      },
+      "pointerLocked": false
+    },
+    {
+      "active": true,
+      "kind": "tianhe",
+      "position": [
+        -0.08750527097971932,
+        -0.5355143200602038,
+        1.6920000524520873
+      ],
+      "direction": [
+        -1.214306433183765e-16,
+        0,
+        -1
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "yaw": -3.141592653589793,
+      "pitch": 0,
+      "speed": 0.85,
+      "radius": 0.12,
+      "distanceToSurface": 0.12199999999999989,
+      "travel": 0.7708889173247472,
+      "collision": {
+        "triangles": 312774,
+        "cells": 1659,
+        "buildMilliseconds": 115,
+        "radius": 0.12
+      },
+      "pointerLocked": false
+    }
+  ],
+  "negativeControl": {
+    "passed": true,
+    "detectedMissingPanelRays": 1398
+  },
+  "errors": []
+}

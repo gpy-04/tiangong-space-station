@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "facilities": [
+    {
+      "id": "wt-ec",
+      "distanceToSurface": 0.5035750314794794,
+      "position": [
+        -3.6500000000000012,
+        0.08000000000000003,
+        -0.41999999999999943
+      ],
+      "source": "https://www.cas.cn/cm/202207/t20220725_4842822.shtml"
+    },
+    {
+      "id": "wt-bio",
+      "distanceToSurface": 0.5035750314794787,
+      "position": [
+        -3.6500000000000012,
+        0.08000000000000003,
+        0.4200000000000005
+      ],
+      "source": "https://www.cas.cn/cm/202207/t20220725_4842822.shtml"
+    },
+    {
+      "id": "wt-vgr",
+      "distanceToSurface": 0.446104991231546,
+      "position": [
+        -4.939999999999997,
+        0.08000000000000002,
+        -0.4199999999999987
+      ],
+      "source": "https://www.cas.cn/yw/202207/t20220724_4842806.shtml"
+    },
+    {
+      "id": "wt-glove",
+      "distanceToSurface": 0.40689464142405873,
+      "position": [
+        -4.939999999999997,
+        0.08000000000000002,
+        0.4200000000000011
+      ],
+      "source": "https://www.cas.cn/cm/202207/t20220725_4842822.shtml"
+    },
+    {
+      "id": "wt-cryo",
+      "distanceToSurface": 0.39839195148992346,
+      "position": [
+        -6.230000000000029,
+        0.0799999999999999,
+        -0.419999999999998
+      ],
+      "source": "https://www.cas.cn/cm/202207/t20220725_4842822.shtml"
+    },
+    {
+      "id": "mt-fluid",
+      "distanceToSurface": 0.3983920087243348,
+      "position": [
+        3.6500000000000012,
+        0.08000000000000003,
+        0.4200000000000005
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-two",
+      "distanceToSurface": 0.4068946624131717,
+      "position": [
+        3.6500000000000012,
+        0.08000000000000003,
+        -0.41999999999999943
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-comb",
+      "distanceToSurface": 0.5160080266227461,
+      "position": [
+        5.280000000000003,
+        0.08000000000000003,
+        0.42000000000000065
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-mat",
+      "distanceToSurface": 0.5440357400350202,
+      "position": [
+        5.280000000000003,
+        0.08000000000000003,
+        -0.4199999999999987
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-cold",
+      "distanceToSurface": 0.5327302104989298,
+      "position": [
+        6.909999999999981,
+        0.08000000000000008,
+        0.4200000000000027
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-time1",
+      "distanceToSurface": 0.5160080598899197,
+      "position": [
+        6.909999999999981,
+        0.08000000000000008,
+        -0.4199999999999982
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-service",
+      "distanceToSurface": 0.5327302389810747,
+      "position": [
+        8.540000000000045,
+        0.08000000000000036,
+        0.4200000000000016
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    },
+    {
+      "id": "mt-time2",
+      "distanceToSurface": 0.49771721147733966,
+      "position": [
+        8.540000000000045,
+        0.08000000000000036,
+        -0.4199999999999981
+      ],
+      "source": "https://www.cas.cn/yw/202210/t20221031_4853222.shtml"
+    }
+  ],
+  "checks": [
+    "Exterior module overview has a visible laboratory guide entry",
+    "All 13 facilities have matched racks, research/principle/application/model explanations, sources and safe focus positions",
+    "Variable-gravity control derives rpm from a = omega squared r and synchronizes an 8x slower diagram",
+    "Sample storage temperatures change the explanation without acting as live controls",
+    "Module switch, facility directory and process steps stay synchronized",
+    "Clicking actual cabinet geometry selects that cabinet",
+    "Projected numbered hotspots are visible and clickable",
+    "Leaving laboratories restores the original cabin and overview interfaces",
+    "390px mobile guide, controls, reading pause, focus handoff and dismissal work"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "geometry": {
+    "meshes": 512,
+    "triangles": 1224954,
+    "invalid": 0
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "metrics": {
+    "area": 491.75750000000005,
+    "incident": 0.9016416167287317,
+    "power": 130.34573270085681
+  },
+  "materials": [
+    {
+      "name": "白色柔性隔热包覆 · 缝线与折痕",
+      "metalness": 0,
+      "roughness": 1,
+      "normalMap": true,
+      "roughnessMap": true
+    },
+    {
+      "name": "拉丝铝合金与金属接环",
+      "metalness": 0.95,
+      "roughness": 0.65,
+      "normalMap": false,
+      "roughnessMap": true
+    },
+    {
+      "name": "舱内涂漆面板",
+      "metalness": 0,
+      "roughness": 0.76,
+      "normalMap": false,
+      "roughnessMap": false
+    },
+    {
+      "name": "金色多层隔热薄膜",
+      "metalness": 0.93,
+      "roughness": 0.43,
+      "normalMap": true,
+      "roughnessMap": false
+    },
+    {
+      "name": "柔性太阳电池毯",
+      "metalness": 0.18,
+      "roughness": 0.44,
+      "normalMap": false,
+      "roughnessMap": false
+    },
+    {
+      "name": "睡眠区暖白内饰",
+      "metalness": 0,
+      "roughness": 0.89,
+      "normalMap": false,
+      "roughnessMap": false
+    },
+    {
+      "name": "蓝色睡袋与缝线",
+      "metalness": 0,
+      "roughness": 0.95,
+      "normalMap": false,
+      "roughnessMap": false
+    }
+  ],
+  "interiorSunIntensity": 0.12,
+  "geometry": {
+    "meshes": 512,
+    "triangles": 1224954,
+    "invalid": 0
+  },
+  "errors": [],
+  "externalNetworkRequests": []
+}

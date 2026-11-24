@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "电影开场可跳过，交回交互控制",
+    "几何数据无非有限数，细分三角形超过70万",
+    "透视保留实体内部，外壳淡显",
+    "爆炸动画展开三舱、上下壳和机柜，保留连接线",
+    "问天舱内可环视和沿通道移动",
+    "三舱内部视角可进入，实验室经舱外入口切换",
+    "生活区五个新增入口、推进滑块与已删除侧栏内容检查通过",
+    "10项参考资料可查看",
+    "自动讲解可由用户点击立即接管",
+    "手机无横向溢出，可从更多进入舱内",
+    "导出具备舱体、材料与内部设施的GLB"
+  ],
+  "errors": [],
+  "externalNetworkRequests": [],
+  "geometry": {
+    "meshes": 512,
+    "triangles": 1224954,
+    "invalid": 0
+  },
+  "drawCalls": 516,
+  "measuredFPS": 165,
+  "glbBytes": 91627328,
+  "rendering": "ANGLE D3D11, Chrome headless, 1600x1000, DPR1",
+  "limitations": "Not an engineering CAD model. Interior layout and mechanisms are interpretive. No claim of fully photorealistic parity."
+}

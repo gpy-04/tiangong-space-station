@@ -1,0 +1,11 @@
+{
+  "references/exterior-reference.jpg": "https://www.cmse.gov.cn/dmt/tj/tkyxz/202311/W020231127558484290199.jpg",
+  "references/core-room.jpg": "https://p5.img.cntv.cn/photoworkspace/contentimg/2024/04/24/2024042412103990826.jpg",
+  "references/sleep.jpg": "https://p5.img.cntv.cn/photoworkspace/contentimg/2024/04/24/2024042412192891376.jpg",
+  "references/wentian-lab.jpg": "https://p1.img.cntv.cn/photoworkspace/contentimg/2024/04/24/2024042412290291100.jpg",
+  "references/mengtian-lab.jpg": "https://p3.img.cntv.cn/photoworkspace/contentimg/2024/04/24/2024042412314676778.jpg",
+  "assets/earth.jpg": "https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57730/land_ocean_ice_2048.jpg",
+  "assets/clouds.png": "https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_clouds_1024.png",
+  "references/space-radar-tianggong.glb": "https://raw.githubusercontent.com/Sara-Managed-Projects/space-radar/main/site/models/tiangong.glb",
+  "references/space-radar-LICENSE.txt": "https://raw.githubusercontent.com/Sara-Managed-Projects/space-radar/main/LICENSE"
+}

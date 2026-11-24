@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "checks": [
+    "WASD translations and Q/E vertical movement",
+    "Mouse drag changes yaw and pitch",
+    "Pointer lock can be acquired, released by Escape and acquired again",
+    "R restores authored entry view",
+    "Continuous boosted movement stops at kitchen equipment and walls",
+    "Diagonal movement slides along sleeping-area geometry without tunneling",
+    "Focus loss clears held movement and velocity",
+    "All eight cabin entry views activate collision-aware free movement",
+    "Escape releases input; explicit exit restores external camera",
+    "Tour and teardown controls release free-camera ownership",
+    "390px touch directional controls and vertical controls move the camera",
+    "Real-time render loop responds to held keyboard input"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "initialCollider": {
+    "triangles": 312774,
+    "cells": 1659,
+    "buildMilliseconds": 118,
+    "radius": 0.12
+  },
+  "samples": [
+    {
+      "elapsedMilliseconds": 7.699999999254942,
+      "minimumDistance": 0.6987208858394867
+    },
+    {
+      "elapsedMilliseconds": 4.599999999627471,
+      "minimumDistance": 0.7732729687141789
+    },
+    {
+      "elapsedMilliseconds": 2.799999998882413,
+      "minimumDistance": 0.782765071464704
+    },
+    {
+      "elapsedMilliseconds": 2.300000000745058,
+      "minimumDistance": 0.6165387674326618
+    },
+    {
+      "elapsedMilliseconds": 2,
+      "minimumDistance": 0.6168961778309293
+    },
+    {
+      "elapsedMilliseconds": 3.900000000372529,
+      "minimumDistance": 0.628529580921055
+    },
+    {
+      "elapsedMilliseconds": 3.5,
+      "minimumDistance": 0.6987208858394867
+    },
+    {
+      "elapsedMilliseconds": 5.199999999254942,
+      "minimumDistance": 0.7204516743782103
+    },
+    {
+      "elapsedMilliseconds": 149.59999999962747,
+      "minimumDistance": 0.12199999999999996
+    },
+    {
+      "elapsedMilliseconds": 4.899999998509884,
+      "minimumDistance": 0.12203189404310959
+    },
+    {
+      "elapsedMilliseconds": 113.19999999925494,
+      "minimumDistance": 0.12121611129609183
+    },
+    {
+      "elapsedMilliseconds": 2.599999999627471,
+      "minimumDistance": 0.1212161149944202
+    },
+    {
+      "elapsedMilliseconds": 3.599999999627471,
+      "minimumDistance": 0.12128936508240451
+    },
+    {
+      "elapsedMilliseconds": 9.300000000745058,
+      "minimumDistance": 0.12132843413141114
+    },
+    {
+      "elapsedMilliseconds": 60.40000000037253,
+      "minimumDistance": 0.12199857352092469
+    },
+    {
+      "elapsedMilliseconds": 4.300000000745058,
+      "minimumDistance": 0.12200000000000051
+    },
+    {
+      "elapsedMilliseconds": 85,
+      "minimumDistance": 0.12129190851582394
+    },
+    {
+      "elapsedMilliseconds": 2,
+      "minimumDistance": 0.12129190857926413
+    }
+  ],
+  "geometry": {
+    "meshes": 512,
+    "triangles": 1224954,
+    "invalid": 0
+  },
+  "scope": "Live keyboard, pointer and touch input; boosted wall approaches, diagonal contacts, focus loss and camera-mode handoffs. Radius 0.12 m; no claim of full engineering collision certification."
+}
