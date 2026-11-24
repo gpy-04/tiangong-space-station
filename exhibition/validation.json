@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "date": "2026-11-24T04:20:50.062Z",
+  "date": "2026-11-24T05:12:02.932Z",
   "historyCount": 20,
-  "photoCount": 20,
-  "defaultTheme": "杭州与浙江",
+  "localCount": 4,
+  "museumMode": "text",
   "chapters": [
     "museum",
     "station",
@@ -12,24 +12,29 @@
   "offline": true,
   "desktop": "1600 × 1000",
   "mobile": "390 × 844",
+  "testedWidths": [
+    320,
+    390,
+    768,
+    1600
+  ],
   "errors": [],
   "network": [],
   "checks": [
-    "20 个事件配图均内嵌并解码成功，默认讲解折叠",
-    "三维展品按需加载、真实拖动缩放",
+    "20 项历史成就连续显示，纯文字页面可通过滚轮自然下拉",
+    "杭州目录定位准确，返回历史馆保留阅读位置",
     "空间站透视、爆炸与舱内相机键盘移动",
     "长征十号、昊龙、发动机、座舱进入与返回",
-    "390 × 844 手机布局无横向溢出",
-    "减少动态效果偏好下展台不自动旋转"
+    "320 / 390 / 768 / 1600 像素宽度无横向溢出，手机可下拉阅读全文",
+    "历史馆末尾可继续进入空间站，三章导航与移动端模型正常",
+    "减少动态效果偏好下全部文字直接可见"
   ],
   "inspect": {
-    "chapter": "rocket",
-    "era": "杭州与浙江",
-    "selected": 19,
-    "media": "photo",
-    "historyPlaying": false,
+    "chapter": "station",
+    "museumMode": "text",
     "historyCount": 20,
-    "photoCount": 20,
+    "localCount": 4,
+    "museumScroll": 5379,
     "loaded": {
       "station": true,
       "rocket": true
@@ -37,25 +42,6 @@
     "ready": {
       "station": true,
       "rocket": true
-    },
-    "museum": {
-      "active": false,
-      "kind": "beidou",
-      "rotate": false,
-      "meshes": 686,
-      "invalid": 0,
-      "panels": 72,
-      "drawCalls": 1069,
-      "triangles": 2460374,
-      "camera": [
-        -2.3294423507910786,
-        0.7017753289111026,
-        5.873533036730563
-      ],
-      "canvas": {
-        "width": 1042,
-        "height": 783
-      }
     }
   }
 }
