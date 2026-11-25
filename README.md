@@ -4,11 +4,9 @@
 
 新增 29 页《中国航天发展与 AI 结合》课程汇报，包含课堂流程、航天发展史、在轨计算与智能探测案例，以及空间站、火箭和昊龙货运航天飞机演示。
 
-- [在线交互汇报](https://gpy-04.github.io/tiangong-space-station/course-report/)
 - [下载 PPTX](course-report/aerospace-ai-course-report.pptx)
-- [下载离线交互 HTML](course-report/index.html)
 
-HTML 内嵌展馆与模型，可从汇报进入演示并返回原页。PPTX 提供逐页讲稿，适合课堂复盘与项目汇报。
+PPTX 提供逐页讲稿，适合课堂复盘与项目汇报。
 
 新增整合版：[`exhibition/index.html`](exhibition/index.html)，依次包含历史博物馆、天宫空间站、火箭与发射。历史馆可直接向下滚动，20 项历史成就各配一张真实图片，支持点击放大；页面不列图片出处，并突出杭州与浙江的四项贡献。操作与重新构建说明见 [`exhibition/README.md`](exhibition/README.md)。
 
